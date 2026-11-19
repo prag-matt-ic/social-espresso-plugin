@@ -15,6 +15,8 @@ Start a new chat, enable **Social Espresso Operations**, then connect with your 
 
 Once your administrator publishes the plugin to your workspace, open **Plugins**, choose your workspace as the source, install **Social Espresso Operations** and complete the Connect prompt. In a new chat select the plugin and ask “Summarise next week’s events.” If the listing is missing, ask your administrator whether your workspace has joined the pilot.
 
+**Every calendar change requires your explicit written approval in chat after you see the proposed changes.** You can approve all listed jobs or name a subset.
+
 ## Try a weekly staffing review
 
 1. **“Summarise next week’s events.”** You’ll see service dates, booking statuses and staffing or equipment gaps. [Calendar summary skill](skills/summarise-events/SKILL.md)
