@@ -17,6 +17,8 @@ Once your administrator publishes the plugin to your workspace, open **Plugins**
 
 **Every calendar change requires your explicit written approval in chat after you see the proposed changes.** You can approve all listed jobs or name a subset.
 
+The calendar skill can also list weekly branding quantities, venue addresses, missing machine allocations, machines booked abroad today, and the full week’s setup, service and breakdown schedule.
+
 ## Try a weekly staffing review
 
 1. **“Summarise next week’s events.”** You’ll see service dates, booking statuses and staffing or equipment gaps. [Calendar summary skill](skills/summarise-events/SKILL.md)
