@@ -2,11 +2,17 @@
 
 Ask which events are coming up, which confirmed bookings still need a barista or grinder, and who is available to cover them. The plugin bundles two skills and connects your agent to the Operations calendar over MCP. Calendar access uses your own Social Espresso account.
 
-## Regular ChatGPT chats
+## Set up in cloud ChatGPT
 
-Live calendar reads with v0.2.1 have been verified in Codex inside the ChatGPT desktop app. In a regular ChatGPT chat on the same Mac, the installed plugin reported **Auth required** after sign-in. If you see this, skip reinstalling the marketplace. Use Codex for a live calendar read while we verify sign-in in regular ChatGPT.
+If **Social Espresso Operations** already appears under **Installed** at [ChatGPT Plugins](https://chatgpt.com/plugins), open it and choose **Try in chat**. For a fresh personal account with custom MCP servers enabled, follow these steps in a browser.
 
-For maintainers testing a hosted ChatGPT connection, use the public Operations endpoint below and register the exact HTTPS callback shown in the ChatGPT connection settings. Verify with a live calendar query in a regular ChatGPT chat. [OpenAI connection guide](https://developers.openai.com/plugins/deploy/connect-chatgpt)
+1. Go to **Plugins → Add → Add custom MCP server**. Enter **Social Espresso Operations** as the name. Select **Server URL** and enter `https://operations.socialespresso.co.uk/api/mcp`. Leave **Authentication** set to **OAuth**.
+2. Open **Advanced OAuth settings** and wait for discovery to finish. Choose **User-Defined OAuth Client**. Enter public client ID `931a9bd8-9cab-40bf-88a1-4cedcb37f6ac`, leave the secret blank and use token endpoint auth method **none**. Select only **email** under default scopes and enter `email` under **Base scopes**. Keep the discovered endpoints.
+3. Copy the **Callback URL** shown in that form and keep the form open. Give the URL to the Social Espresso maintainer to confirm it is allowed for this OAuth client. Each new connection can have its own callback. Wait for confirmation before continuing.
+4. Review the custom-server notice, check **I understand and want to continue**, then choose **Create as a plugin → Connect Social Espresso Operations**. Sign in with your Operations email if prompted, check the account on the consent page, and choose **Allow access**.
+5. Back in ChatGPT, choose **Try in chat** and ask **“How many confirmed events are in service today? Use the Operations calendar.”** A live result, including zero, verifies the connection.
+
+This setup connects ChatGPT directly to the hosted calendar tools. The GitHub marketplace installation below also supplies two workflow skills for Codex.
 
 ## Codex in the ChatGPT desktop app
 
