@@ -2,18 +2,20 @@
 
 Ask which events are coming up, which confirmed bookings still need a barista or grinder, and who is available to cover them. The plugin bundles two skills and connects your agent to the Operations calendar over MCP. Calendar access uses your own Social Espresso account.
 
-## Install in Codex
+## Personal ChatGPT desktop
+
+1. Open **Plugins** in ChatGPT desktop and add the GitHub marketplace `https://github.com/prag-matt-ic/social-espresso-plugin`. Install **Social Espresso Operations**. If you already have v0.2.0, refresh the marketplace and check the installed version before testing.
+2. Select the plugin in a new chat and ask **“What events are on this week?”**
+3. When ChatGPT offers **Connect** or a sign-in link for **operations**, open it on the same computer. Use your Operations email, complete sign-in and approve access. Return to the chat and repeat the question if needed.
+
+The calendar is live. A reply listing the two installed skills only confirms the package is present. If there is no connection action, open the installed plugin details and check for a sign-in prompt. If it is missing there too, report your plugin version and what ChatGPT displayed. If sign-in was cancelled, start a fresh connection attempt. Each attempt has its own link.
+
+## Install in Codex CLI
 
 ```sh
 codex plugin marketplace add prag-matt-ic/social-espresso-plugin
 codex plugin add social-espresso@social-espresso
 ```
-
-Start a new chat, enable **Social Espresso Operations**, then connect with your Operations email when prompted. The hosted connection needs to be enabled by your workspace administrator. Until the hosted pilot opens, you can install the skills, but live queries and updates require a configured development connection.
-
-## Install in ChatGPT
-
-Once your administrator publishes the plugin to your workspace, open **Plugins**, choose your workspace as the source, install **Social Espresso Operations** and complete the Connect prompt. In a new chat select the plugin and ask “Summarise next week’s events.” If the listing is missing, ask your administrator whether your workspace has joined the pilot.
 
 **Every calendar change requires your explicit written approval in chat after you see the proposed changes.** You can approve all listed jobs or name a subset.
 
@@ -27,6 +29,6 @@ The calendar skill can also list weekly branding quantities, venue addresses, mi
 
 ## Connection and permissions
 
-The package declares one Streamable HTTP server at `https://operations.socialespresso.co.uk/api/mcp`. The client handles OAuth sign-in and consent. Full-calendar viewers can query jobs, staff and equipment. Editors and admins can approve assignment changes when writes are enabled. Staff-scoped accounts cannot access this integration.
+The desktop plugin connects to the hosted Operations calendar at `https://operations.socialespresso.co.uk/api/mcp`. Each teammate signs in with their own Operations account. Full-calendar viewers, editors and admins can query jobs, staff and equipment. Staff-scoped accounts have no plugin access.
 
-Other Agent Plugins clients can load this repository root if they support version 1.0, Streamable HTTP and the registered OAuth flow. Your administrator supplies the client registration for that environment. The skills contain workflow instructions. Current availability, permissions and saved assignments come from Operations. [Agent Plugins runtime](https://agent-plugins.org/client-implementers/mcp-runtime)
+Assignment previews and saves require an editor or admin account and a server that exposes both change tools. If your connection offers only reads, you can still review staffing and equipment gaps.

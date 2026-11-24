@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "operations": {
+      "url": "https://operations.socialespresso.co.uk/api/mcp",
+      "scopes": [
+        "email"
+      ],
+      "oauth": {
+        "client_id": "931a9bd8-9cab-40bf-88a1-4cedcb37f6ac",
+        "callback_port": 6276,
+        "callback_url": "http://127.0.0.1:6276/callback/B7-ksUTZKUIa"
+      }
+    }
+  }
+}

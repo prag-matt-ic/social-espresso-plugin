@@ -1,0 +1,23 @@
+{
+  "name": "social-espresso",
+  "description": "Query Operations jobs and save assignment changes after explicit written approval in chat.",
+  "author": {
+    "name": "Social Espresso"
+  },
+  "repository": "https://github.com/prag-matt-ic/social-espresso-plugin",
+  "version": "0.2.1",
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Social Espresso Operations",
+    "shortDescription": "Review events and book staff and equipment",
+    "category": "Productivity",
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "Summarise next week’s events and highlight confirmed jobs with open assignments."
+    ]
+  }
+}

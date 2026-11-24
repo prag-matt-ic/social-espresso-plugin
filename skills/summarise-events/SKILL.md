@@ -3,6 +3,8 @@ name: summarise-events
 description: Summarise the Operations calendar for a date range, including confirmed and quoted events, branding, venue addresses, machine allocation gaps, overseas machine bookings and setup-to-breakdown schedules.
 ---
 
+If the live read tools are missing or request authentication in ChatGPT desktop, use the client’s connection action or its sign-in link for `operations` when offered. If neither appears, direct the teammate to the installed plugin details. Report a missing action or the sign-in error and the data you could not check. Never generate a login URL, suggest terminal commands or require a workspace admin for this personal installation.
+
 Resolve relative dates in Europe/London. “Next week” runs Monday through Sunday. For a service-week summary, call `list_jobs` with inclusive `service_date_from` and `service_date_to`. Apply a requested status filter at query time. Follow every cursor or say which part of the results you could verify.
 
 Count each job ID once, including multi-day service already underway. Group by status and show service dates and source links. Label setup, delivery and collection separately from service. Mention missing or unknown times when they affect the answer. Keep similar records separate and flag possible duplication when it affects staffing.
