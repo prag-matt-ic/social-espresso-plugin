@@ -2,10 +2,16 @@
 
 Ask which events are coming up, which confirmed bookings still need a barista or grinder, and who is available to cover them. The plugin bundles two skills and connects your agent to the Operations calendar over MCP. Calendar access uses your own Social Espresso account.
 
-## Personal ChatGPT desktop
+## Regular ChatGPT chats
+
+Live calendar reads with v0.2.1 have been verified in Codex inside the ChatGPT desktop app. In a regular ChatGPT chat on the same Mac, the installed plugin reported **Auth required** after sign-in. If you see this, skip reinstalling the marketplace. Use Codex for a live calendar read while we verify sign-in in regular ChatGPT.
+
+For maintainers testing a hosted ChatGPT connection, use the public Operations endpoint below and register the exact HTTPS callback shown in the ChatGPT connection settings. Verify with a live calendar query in a regular ChatGPT chat. [OpenAI connection guide](https://developers.openai.com/plugins/deploy/connect-chatgpt)
+
+## Codex in the ChatGPT desktop app
 
 1. Open **Plugins** in ChatGPT desktop and add the GitHub marketplace `https://github.com/prag-matt-ic/social-espresso-plugin`. Install **Social Espresso Operations**. If you already have v0.2.0, refresh the marketplace and check the installed version before testing.
-2. Select the plugin in a new chat and ask **“What events are on this week?”**
+2. Select the plugin in a new Codex chat and ask **“What events are on this week?”**
 3. When ChatGPT offers **Connect** or a sign-in link for **operations**, open it on the same computer. Use your Operations email, complete sign-in and approve access. Return to the chat and repeat the question if needed.
 
 The calendar is live. A reply listing the two installed skills only confirms the package is present. If there is no connection action, open the installed plugin details and check for a sign-in prompt. If it is missing there too, report your plugin version and what ChatGPT displayed. If sign-in was cancelled, start a fresh connection attempt. Each attempt has its own link.
