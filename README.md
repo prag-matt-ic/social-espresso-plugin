@@ -25,6 +25,8 @@ Open **Advanced OAuth settings**. Once discovery finishes, keep the discovered e
 | Default scopes | Select only `email` |
 | Base scopes | Enter `email` |
 
+Review the notice, tick **I understand and want to continue**, then choose **Create as a plugin**. If ChatGPT asks you to confirm, choose **Connect Social Espresso Operations**. Sign-in should start automatically. Sign in with your Operations email if prompted, then choose **Allow access** to approve the connection.
+
 ### 2. Upload the two workflow skills
 
 1. Open [ChatGPT Plugins](https://chatgpt.com/plugins) and choose **Add → Upload plugin archive**. Choose **click to upload**, select the [Social Espresso Workflows ZIP](https://raw.githubusercontent.com/prag-matt-ic/social-espresso-plugin/main/assets/social-espresso-workflows.zip) and choose **Add plugin**.
