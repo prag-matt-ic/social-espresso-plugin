@@ -8,11 +8,22 @@ Cloud setup has two parts. Connect the calendar first, then upload the workflow 
 
 ### 1. Connect the Operations calendar
 
-1. Go to **Plugins → Add → Add custom MCP server**. Enter **Social Espresso Operations** as the name. Download the [256 × 256 Operations icon (PNG)](https://raw.githubusercontent.com/prag-matt-ic/social-espresso-plugin/main/assets/operations-icon.png) and select it under **Choose icon**. For **Description**, enter “Review the Social Espresso calendar, staffing and equipment for upcoming events.” Select **Server URL** and enter `https://operations.socialespresso.co.uk/api/mcp`. Leave **Authentication** set to **OAuth**.
-2. Open **Advanced OAuth settings** and wait for discovery to finish. Choose **User-Defined OAuth Client**. Enter public client ID `931a9bd8-9cab-40bf-88a1-4cedcb37f6ac`, leave the secret blank and use token endpoint auth method **none**. Select only **email** under default scopes and enter `email` under **Base scopes**. Keep the discovered endpoints.
-3. Copy the **Callback URL** shown in that form and keep the form open. Give the URL to the Social Espresso maintainer to confirm it is allowed for this OAuth client. Each new connection can have its own callback. Wait for confirmation before continuing.
-4. Review the custom-server notice, check **I understand and want to continue**, then choose **Create as a plugin → Connect Social Espresso Operations**. Sign in with your Operations email if prompted, check the account on the consent page, and choose **Allow access**.
-5. Back in ChatGPT, choose **Try in chat** and ask **“How many confirmed events are in service today? Use the Operations calendar.”** A live result, including zero, verifies the connection.
+Open **Plugins → Add → Add custom MCP server**. Select **Server URL** and keep **Authentication** set to **OAuth**.
+
+| Field | Value |
+| --- | --- |
+| Icon | [Download the 256 × 256 Operations icon (PNG)](https://raw.githubusercontent.com/prag-matt-ic/social-espresso-plugin/main/assets/operations-icon.png) |
+| Name | Social Espresso Operations |
+| Description | Review the Social Espresso calendar, staffing and equipment for upcoming events. |
+| Server URL | `https://operations.socialespresso.co.uk/api/mcp` |
+
+Open **Advanced OAuth settings**. Once discovery finishes, keep the discovered endpoints and choose **User-Defined OAuth Client**. Leave the client secret blank and set the token endpoint auth method to **none**.
+
+| Field | Value |
+| --- | --- |
+| Client ID | `931a9bd8-9cab-40bf-88a1-4cedcb37f6ac` |
+| Default scopes | Select only `email` |
+| Base scopes | Enter `email` |
 
 ### 2. Upload the two workflow skills
 
