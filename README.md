@@ -27,11 +27,7 @@ Open **Advanced OAuth settings**. Once discovery finishes, keep the discovered e
 
 ### 2. Upload the two workflow skills
 
-1. Ask the Social Espresso maintainer for a **Social Espresso Workflows** ZIP prepared for your Operations connection. The archive references that connection by its app ID. If you recreated the connection, ask for a ZIP with the new ID.
-2. Open **Plugins → Add → New Plugin**. Choose **click to upload**, select the ZIP and choose **Add plugin**.
-3. Check that **Social Espresso Workflows** offers both `summarise-events` and `plan-job-assignments`. In a new chat, select the calendar summary skill and ask **“What events are on this week?”** Confirm it returns a live calendar result. You can verify the assignment skill is present without saving a change.
-
-The custom MCP connection has been tested in cloud ChatGPT. End-to-end verification of the separate workflow ZIP upload is pending.
+1. Open **Plugins → Add → New Plugin**. Choose **click to upload**, select the [Social Espresso Workflows ZIP](https://raw.githubusercontent.com/prag-matt-ic/social-espresso-plugin/main/assets/social-espresso-workflows.zip) and choose **Add plugin**.
 
 ## Codex in the ChatGPT desktop app
 
