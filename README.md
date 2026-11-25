@@ -8,7 +8,7 @@ Cloud setup has two parts. Connect the calendar first, then upload the workflow 
 
 ### 1. Connect the Operations calendar
 
-Open **Plugins → Add → Add custom MCP server**. Select **Server URL** and keep **Authentication** set to **OAuth**.
+Open [ChatGPT Plugins](https://chatgpt.com/plugins) and choose **Add → Add custom MCP server**. Select **Server URL** and keep **Authentication** set to **OAuth**.
 
 | Field | Value |
 | --- | --- |
@@ -27,7 +27,7 @@ Open **Advanced OAuth settings**. Once discovery finishes, keep the discovered e
 
 ### 2. Upload the two workflow skills
 
-1. Open **Plugins → Add → New Plugin**. Choose **click to upload**, select the [Social Espresso Workflows ZIP](https://raw.githubusercontent.com/prag-matt-ic/social-espresso-plugin/main/assets/social-espresso-workflows.zip) and choose **Add plugin**.
+1. Open [ChatGPT Plugins](https://chatgpt.com/plugins) and choose **Add → Upload plugin archive**. Choose **click to upload**, select the [Social Espresso Workflows ZIP](https://raw.githubusercontent.com/prag-matt-ic/social-espresso-plugin/main/assets/social-espresso-workflows.zip) and choose **Add plugin**.
 
 ## Codex in the ChatGPT desktop app
 
