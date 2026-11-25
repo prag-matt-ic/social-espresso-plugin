@@ -14,7 +14,7 @@ Open [ChatGPT Plugins](https://chatgpt.com/plugins) and choose **Add → Add cus
 | --- | --- |
 | Icon | [Download the 256 × 256 Operations icon (PNG)](https://raw.githubusercontent.com/prag-matt-ic/social-espresso-plugin/main/assets/operations-icon.png) |
 | Name | Social Espresso Operations |
-| Description | Review the Social Espresso calendar, staffing and equipment for upcoming events. |
+| Description | Review the Social Espresso calendar and preview changes to staff and equipment assignments. Editors and admins can save changes after written approval in chat. |
 | Server URL | `https://operations.socialespresso.co.uk/api/mcp` |
 
 Open **Advanced OAuth settings**. Once discovery finishes, keep the discovered endpoints and choose **User-Defined OAuth Client**. Leave the client secret blank and set the token endpoint auth method to **none**.
